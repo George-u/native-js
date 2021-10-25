@@ -1,134 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png" />
+    <title>Native JS Slider</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <body>
+    <header class="header">
+      <div class="header-menu">
+        <div class="header-menu__container">
+          <div class="header-logo">
+            <a class="header-logo__link" href="#">
+              <img
+                class="header-logo__img"
+                src="assets/img/logo-mountainHardware_410x.png"
+                alt="logo"
+              />
+            </a>
+          </div>
 
-  <link rel="stylesheet" href="libs/@fontawesome/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Native JS Slider</title>
-</head>
-
-<body>
-
-  <header class="header">
-
-    <div class="header-menu">
-      <div class="header-menu__container">
-
-        <div class="header-logo">
-          <a class="header-logo__link" href="#">
-            <img class="header-logo__img" src="assets/img/logo-mountainHardware_410x.png" alt="logo">
-          </a>
-        </div>
-
-        <div class="header-navbar">
-
-          <ul class="header-navbar__list">
-            <li class="header-navbar__item">
-              <a class="header-navbar__link" href="#">Shop</a>
-            </li>
-            <li class="header-navbar__item">
-              <a class="header-navbar__link" href="#">Learn</a>
-            </li>
-            <li class="header-navbar__item">
-              <a class="header-navbar__link" href="#">Inspire</a>
-            </li>
-          </ul>
-
+          <div class="header-navbar">
+            <ul class="header-navbar__list">
+              <li class="header-navbar__item">
+                <a class="header-navbar__link" href="#">Shop</a>
+              </li>
+              <li class="header-navbar__item">
+                <a class="header-navbar__link" href="#">Learn</a>
+              </li>
+              <li class="header-navbar__item">
+                <a class="header-navbar__link" href="#">Inspire</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section id="main" class="main">
-    <div id="carousel" class="carousel">
-
-      <div id="slides" class="slides">
-
-        <div class="item slide active">
-          <div class="container">
-            <h2 class="slide__title white">
-              50% Discount on All Jackets
-            </h2>
-            <p class="slide__subtitle white">Big Sale!</p>
+    <section id="main" class="main">
+      <div id="carousel" class="carousel">
+        <div id="slides" class="slides">
+          <div class="item slide active">
+            <div class="container">
+              <h2 class="slide__title white">50% Discount on All Jackets</h2>
+              <p class="slide__subtitle white">Big Sale!</p>
+            </div>
+            <div class="slide__actions">
+              <a class="slide__btn" href="#">Buy Now</a>
+            </div>
           </div>
-          <div class="slide__actions">
-            <a class="slide__btn" href="#">Buy Now</a>
+
+          <div class="item slide">
+            <div class="container">
+              <h2 class="slide__title white">Kids Collection</h2>
+              <p class="slide__subtitle white">The Best Cloth for Kids</p>
+            </div>
+            <div class="slide__actions">
+              <a class="slide__btn" href="#">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="item slide">
+            <div class="container">
+              <h2 class="slide__title white">Women Collection</h2>
+              <p class="slide__subtitle white">Jackets, Gloves, Hoodies</p>
+            </div>
+            <div class="slide__actions">
+              <a class="slide__btn" href="#">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="item slide">
+            <div class="container">
+              <h2 class="slide__title white">For Her</h2>
+              <p class="slide__subtitle white">Spring Collection</p>
+            </div>
+            <div class="slide__actions">
+              <a class="slide__btn" href="#">Buy Now</a>
+            </div>
+          </div>
+
+          <div class="item slide">
+            <div class="container">
+              <h2 class="slide__title white">Soft and Lightweight membrana</h2>
+              <p class="slide__subtitle white">Waterproof</p>
+            </div>
+            <div class="slide__actions">
+              <a class="slide__btn" href="#">Buy Now</a>
+            </div>
           </div>
         </div>
-
-        <div class="item slide">
-          <div class="container">
-            <h2 class="slide__title white">
-              Kids Collection
-            </h2>
-            <p class="slide__subtitle white">The Best Cloth for Kids</p>
-          </div>
-          <div class="slide__actions">
-            <a class="slide__btn" href="#">Buy Now</a>
-          </div>
-        </div>
-
-        <div class="item slide">
-          <div class="container">
-            <h2 class="slide__title white">
-              Women Collection
-            </h2>
-            <p class="slide__subtitle white">Jackets, Gloves, Hoodies</p>
-          </div>
-          <div class="slide__actions">
-            <a class="slide__btn" href="#">Buy Now</a>
-          </div>
-        </div>
-
-        <div class="item slide">
-          <div class="container">
-            <h2 class="slide__title white">
-              For Her
-            </h2>
-            <p class="slide__subtitle white">Spring Collection</p>
-          </div>
-          <div class="slide__actions">
-            <a class="slide__btn" href="#">Buy Now</a>
-          </div>
-        </div>
-
-        <div class="item slide">
-          <div class="container">
-            <h2 class="slide__title white">
-              Soft and Lightweight membrana
-            </h2>
-            <p class="slide__subtitle white">Waterproof 
-            </p>
-          </div>
-          <div class="slide__actions">
-            <a class="slide__btn" href="#">Buy Now</a>
-          </div>
-        </div>
-
-        
       </div>
+    </section>
 
-    </div>
-  </section>
+    <footer class="footer">
+      <div class="footer__contacts"><span>Навчальний Шаблон </span><br /></div>
 
-  <footer class="footer">
+      <div class="footer__container">
+        <p>
+          &copy; 2021
+          <a href="https://github.com/George-u?tab=repositories" target="_blank"
+            >Yuriy.com</a
+          >
+          належить Theme Technologies LLC. Всі права захищені.
+        </p>
+      </div>
+    </footer>
 
-    <div class="footer__contacts">
-      <span>Навчальний Шаблон </span><br>
-    </div>
-
-    <div class="footer__container">
-      <p> &copy; 2021 <a href="https://github.com/George-u?tab=repositories" target="_blank">Yuriy.com</a> належить Theme Technologies LLC. Всі права захищені. </p>
-
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js" type="module"></script>
-</body>
-
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
 </html>
